@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Raisyatul Adabiah</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1608889175113-8fba5cf1e61e?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .yes {
+      background-color: #90caf9;
+      color: black;
+    }
+    .yes:hover {
+      background-color: #42a5f5;
+    }
+    .no {
+      background-color: #e0e0e0;
+      color: black;
+    }
+    .no:hover {
+      background-color: #bdbdbd;
+    }
+    .hidden {
+      display: none;
+    }
+    .message {
+      font-size: 1.3rem;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>Hi Raisyatul Adabiah 🌙❄️</h1>
+    <p>Wanna go on a date with me one day?</p>
+    <div class="buttons">
+      <button class="yes" onclick="showMessage('yes')">Yes, I would love to 💖</button>
+      <button class="no" onclick="showMessage('no')">No 😢</button>
+    </div>
+    <div class="message hidden" id="response"></div>
+  </div>
+  <script>
+    function showMessage(answer) {
+      const message = document.getElementById("response");
+      message.classList.remove("hidden");
+      if (answer === "yes") {
+        message.innerHTML = "I love u so much Icaa 💗 plss accept me in ur life. I would take care of u, I will treat u good. I love u sayangg, can we make this relationship work out?? 💍✨";
+      } else {
+        message.innerHTML = "Aww 😢 maybe another time then... I still love you 💔";
+      }
+    }
+  </script>
+</body>
+</html>
